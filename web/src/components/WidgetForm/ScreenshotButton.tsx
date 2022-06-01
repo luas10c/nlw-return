@@ -38,7 +38,7 @@ const ScreenshotButton = ({ screenshot, onScreenshotSuccess }: ScreenshotButtonP
       type="button"
       className="w-[40px] h-[40px] flex justify-center items-center p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors"
       onClick={handleTakeScreenshot}>
-      {takingScreenshot ? <Loading size={18} /> : <Camera className="w-6 h-6 text-zinc-100" />}
+      {takingScreenshot ? <Loading /> : <Camera className="w-6 h-6 text-zinc-100" />}
     </button>
   )
 }
