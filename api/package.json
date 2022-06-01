@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "ts-node-dev --respawn --exit-child --ignore-watch node_modules --transpile-only src/server.ts",
-    "start": "node dist/server.js",
+    "start": "npx prisma generate --schema ./src/database/prisma/schema.prisma && node dist/server.js",
     "build": "npx tsc",
     "prisma:studio": "npx prisma studio --schema=src/database/prisma/schema.prisma",
     "prisma:migrate-dev": "npx prisma migrate dev --schema=src/database/prisma/schema.prisma",
